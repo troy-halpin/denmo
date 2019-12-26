@@ -8,4 +8,4 @@ Inside `denmo/server`
 To run in dev mode (granting all permissions)
 `deno -A index.ts`
 
-And the server will download its deps then be available on `localhost:4000`
+And the server will download its deps then be available on `localhost:3000`
