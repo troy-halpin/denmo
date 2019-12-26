@@ -4,6 +4,7 @@ Venmo's front end with a Deno/[Oak](https://deno.land/x/oak/README.md) server
 
 ### Running the server
 _denmo/server_
+
 `deno -A index.ts`
 
 _(Note: `-A` flag allows all permissions, recommended for dev only)_
