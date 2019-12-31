@@ -7,9 +7,8 @@ export default async ({ request, response }) => {
     return;
   }
 
-  const {
-    value: { name }
-  } = await request.body();
+  const { value } = await request.body()
+  const name = JSON.parse(value).name
 
   if (!name) {
     response.status = 422;

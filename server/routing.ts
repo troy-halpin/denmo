@@ -8,8 +8,8 @@ const router = new Router();
 
 router
   .get("/users", getUsers)
-  .get("/users/:id", getUserDetails)
+  .get<{ id: string }>("/users/:id", getUserDetails)
   .post("/users", createUser)
-  .put("/users/:id", updateUser)
+  .put<{ id: string }>("/users/:id", updateUser)
 
 export default router;
